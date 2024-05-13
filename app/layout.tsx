@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>
